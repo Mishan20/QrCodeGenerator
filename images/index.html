@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h2>QR Code Genarator</h2>
+    </header>
+
+    <!-- main -->
+    <main>
+        <div class="image">
+            <img src="./qr-image.jpg"  alt="image">
+        </div>
+        <div class="content">
+            <h2>QR Code Genarator</h2>
+            <p>
+                QR Code allow smartphone users to access your website simply and quickly.
+            </p>
+            <p>
+                Enter your URL below to genarate a QR Code and download the image.
+            </p>
+
+            <form id="generate-form">
+                <input type="url" name="" id="url" placeholder="Enter a URL" class="inouturl" />
+                <select name="size" id="size" class="selected">
+                    <option value="100">100x100</option>
+                    <option value="200">200x200</option>
+                    <option value="300">300x300</option>
+                    <option value="400">400x400</option>
+                    <option value="500">500x500</option>
+                    <option value="600">600x600</option>
+                    <option value="700">700x700</option>
+                </select>
+                <button class="submit" type="submit"> Generate QR Code</button>
+            </form>
+        </div>
+    </main>
+
+    <div class="generated">
+        <!-- spinner -->
+        <div class="loder" id="spinner">
+
+        </div>
+
+        <!-- QR code img append -->
+        <div class="qrcode">
+            
+        </div>
+    </div>
+</body>
+</html>
